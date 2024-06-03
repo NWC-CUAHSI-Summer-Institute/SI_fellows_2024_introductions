@@ -18,22 +18,20 @@ You are interfacing with a Linux virtual machine. You'll need to follow these st
 
 
 
-0. Configure your github information:
+- Clone the Repository: `git clone https://github.com/NWC-CUAHSI-Summer-Institute/training_git_introductions_2024.git`
+- Navigate into the cloned repository directory: `cd summer-institute-2024`
+- Configure your github information:
 On the top of the virtual compute interface there are some dropdown items. Click on "View" and toggle on "Show hidden files".
-Make a new directory with the following name: ".git"
-Make a new file with the following name: "config"
-Add the folllwing information to the file ("./git/config")
+In the directory called ".git", which will be shown in grey as a hidden folder, there is a file called "config (".git/config"). Open that file, and add the following information to the bottom of the file.
 ```
 [user]
 	email = youremailassociatedwithgithub@university.edu
 	name = yourgithubusername
 ```
-2. Clone the Repository: `git clone https://github.com/NWC-CUAHSI-Summer-Institute/training_git_introductions_2024.git`
-3. Navigate into the cloned repository directory: `cd summer-institute-2024`
-4. Edit the Introduction File
+- Edit the Introduction File
     Open the file introductions.txt in a text editor of your choice.
     Add your name, your university, and two or three sentences describing your research interests.
-5. Commit Your Changes
+- Commit Your Changes
 After editing the file, save your changes and return to your terminal.
 Use the following commands to commit your changes to the repository:
 ```
@@ -41,4 +39,4 @@ git add introductions.txt
     git commit -m "Add my introduction"
     git push
 ```
-6. Make a pull request
+- Make a pull request
