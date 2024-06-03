@@ -2,22 +2,18 @@
 
 Welcome to the National Water Center Innovators Program Summer Institute GitHub training repository! This repository is designed to help participants of the Summer Institute get comfortable with using GitHub, a tool for collaborative software development and data science.
 
-## Training Objective
+#### Training Objective
 
 The goal of this training is to familiarize you with the basics of GitHub. You will learn how to clone a repository, make edits, and commit changes. This exercise is intended to prepare you for contributing to collaborative projects during the Summer Institute, ensuring that all code and findings are public and reproducible.
 Getting Started
 
-## Prerequisites
+## 0. Prerequisites
 We will be using the CIROH 2i2c cloud compute platform during the Summer Institute bootcamp. You can access that platform here: https://ciroh.awi.2i2c.cloud/. Please start up a "small" compute instance. It might take a minute or two to start up. When it starts, it will open up a bash terminal on the right, and a file explorer on the left.
 
-# Exercise Instructions
-
-# Summer Institute Fellows: Introductions and Introduction to GitHub
-
-## Sign up for GitHub
+## 1. Sign up for GitHub
 You probably already have a GitHub account, but just in case you don’t, you can sign up [here](https://github.com).
 
-### Generating a Personal Access Token on GitHub:
+#### Generating a Personal Access Token on GitHub:
 
 1. **Log in to GitHub**:
    - Go to GitHub and log in.
@@ -42,7 +38,7 @@ You probably already have a GitHub account, but just in case you don’t, you ca
    - Copy the generated token and save it securely. You won’t be able to see it again.
    - Use this token as the password when you push your modifications.
 
-## Request Access to AWI 2i2c
+## 2. Request Access to AWI 2i2c
 For the Summer Institute bootcamp, we’ll use a cloud computing platform hosted by The Alabama Water Institute.
 
 1. Visit [this website](https://docs.ciroh.org/docs/services/access/).
@@ -51,13 +47,12 @@ For the Summer Institute bootcamp, we’ll use a cloud computing platform hosted
 Fill out the form with the following information:
 
 **1.    Requester Information:**
-- Requester Name: [your name here]
-- Requester Institution: [your university here]
-- Requester email address: [your email address]
-
-- PI's Full Name: Jonathan Frame
-- PI's Affiliated Institute: Lynker
-- PI's Affiliated Email Address: jframe@lynker.com
+Requester Name: [your name here]  
+Requester Institution: [your university here]  
+Requester email address: [your email address]  
+PI's Full Name: Jonathan Frame  
+PI's Affiliated Institute: Lynker  
+PI's Affiliated Email Address: jonathan's email  
 
 **2.    Project Information:**
 Summer Institute Bootcamp, 2024. The bootcamp will include training on basic computational skills, and this will be done on the AWI 2i2c resource. All bootcamp participants will need access to this cloud compute platform.
@@ -81,12 +76,12 @@ Unknown
 Unknown
 
 
-## Log into AWI 2i2c
+## 3. Log into AWI 2i2c
 1. Go to ciroh.awi.2i2c.cloud.
 2. Choose Server Option – Small machine with image: “New Pangeo Notebook base image 2024.04.08”.
 ![2i2c Small Machine](screenshots/2i2c_small.png)
 
-## Clone the Repository
+## 4. Clone the Repository
 1. Go to the GitHub site for our repository: NWC-CUAHSI-Summer-Institute/SI_fellows_2024_introductions, and click on the green button to copy the HTTPS address.
 ![Copy Repo HTTPS](screenshots/copy_repo_https.png)
 3. In Jupyter environment, type:
@@ -95,7 +90,7 @@ git clone https://github.com/NWC-CUAHSI-Summer-Institute/SI_fellows_2024_introdu
 ```
 ![gh_clone](screenshots/gh_clone.png)
 
-## Set Up Your Git Information on the Jupyter Platform
+## 5. Set Up Your Git Information on the Jupyter Platform
 1. Click on "View" and toggle on "Show hidden files".
 ![Show Hidden Files](screenshots/show_hidden.png)
 3. Edit the `.git/config` file with:
@@ -106,7 +101,7 @@ git clone https://github.com/NWC-CUAHSI-Summer-Institute/SI_fellows_2024_introdu
 ```
 
 
-## Make a New Branch
+## 6. Make a New Branch
 
 1. Understand the difference between forks and branches: [Fork vs Branch](https://www.ssw.com.au/rules/fork-vs-branch/).
 2. Create a new branch:
@@ -115,12 +110,12 @@ git checkout -b [your_branch_name]
 ```
 
 
-## Add Your Information
+## 7. Add Your Information to the text document
 
 1. Open the `introductions.txt` file in Jupyter Lab.
 2. Add a few notes about yourself.
 
-## Commit Your Changes
+## 8. Commit Your Changes
 
 1. Stage and commit your changes:
 
@@ -130,7 +125,7 @@ git commit -m "Added my name and interests"
 ```
 
 
-## Push Your Changes
+## 9. Push Your Changes
 
 1. Push your branch to the remote repository:
 
@@ -139,7 +134,7 @@ git push --set-upstream origin [your_branch_name]
 ```
 
 
-## Create a Pull Request
+## 10. Create a Pull Request
 
 1. Go to the GitHub repository website.
 2. Click the “Compare & pull request” button.
