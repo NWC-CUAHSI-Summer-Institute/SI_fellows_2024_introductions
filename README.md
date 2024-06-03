@@ -12,31 +12,146 @@ We will be using the CIROH 2i2c cloud compute platform during the Summer Institu
 
 # Exercise Instructions
 
-By now you should have a GitHub Account with two factor authentification and access to the 2i2c cloud compute platform. 
+# Summer Institute Fellows: Introductions and Introduction to GitHub
 
-You are interfacing with a Linux virtual machine. You'll need to follow these steps to add your information to the `introductions.txt` file. Now there will be a file called ".gitconfig", notice that hidden files have a "." in front of them.
+## Sign up for GitHub
+You probably already have a GitHub account, but just in case you don’t, you can sign up [here](https://github.com).
+
+### Generating a Personal Access Token on GitHub:
+
+1. **Log in to GitHub**:
+   - Go to GitHub and log in.
+
+2. **Open Settings**:
+   - Click your profile picture > Settings.
+
+3. **Access Developer Settings**:
+   - In the left sidebar, click Developer settings.
+
+4. **Create a New Token**:
+   - Click Personal access tokens > Tokens (classic) > Generate new token.
+![Personal Access Token](screenshots/gh_personal_access_token.png)
+5. **Set Token Details**:
+   - Give your token a descriptive name.
+   - Select the scopes (permissions): `repo` (Full control of private repositories).
+
+6. **Generate Token**:
+   - Click Generate token.
+
+7. **Save the Token**:
+   - Copy the generated token and save it securely. You won’t be able to see it again.
+   - Use this token as the password when you push your modifications.
+
+## Request Access to AWI 2i2c
+For the Summer Institute bootcamp, we’ll use a cloud computing platform hosted by The Alabama Water Institute.
+
+1. Visit [this website](https://docs.ciroh.org/docs/services/access/).
+2. Click on “Public Infrastructure Request Form” under “Public Cloud”.
+
+Fill out the form with the following information:
+
+**1.    Requester Information:**
+- Requester Name: [your name here]
+- Requester Institution: [your university here]
+- Requester email address: [your email address]
+
+- PI's Full Name: Jonathan Frame
+- PI's Affiliated Institute: Lynker
+- PI's Affiliated Email Address: jframe@lynker.com
+
+**2.    Project Information:**
+Summer Institute Bootcamp, 2024. The bootcamp will include training on basic computational skills, and this will be done on the AWI 2i2c resource. All bootcamp participants will need access to this cloud compute platform.
+
+**3.  Project Description:**
+We will use many different software types, depending on the specific training workshop. This will include GitHub, Python, and more.
+
+**4.    Resource Requirements:**
+We can use mostly the same 2i2c compute environments that were set up for the CIROH DevCon.
+
+**5.    Timeline:**
+June 10th - July 25th
+ 
+**6.    Security and Compliance Requirements:**
+N/A
+ 
+**7.    Estimation:**
+Unknown
+  
+**8.    Approval:**
+Unknown
 
 
+## Log into AWI 2i2c
+1. Go to ciroh.awi.2i2c.cloud.
+2. Choose Server Option – Small machine with image: “New Pangeo Notebook base image 2024.04.08”.
+![2i2c Small Machine](screenshots/2i2c_small.png)
 
-- Clone the Repository: `git clone https://github.com/NWC-CUAHSI-Summer-Institute/training_git_introductions_2024.git`
-- Navigate into the cloned repository directory: `cd summer-institute-2024`
-- Configure your github information:
-On the top of the virtual compute interface there are some dropdown items. Click on "View" and toggle on "Show hidden files".
-In the directory called ".git", which will be shown in grey as a hidden folder, there is a file called "config (".git/config"). Open that file, and add the following information to the bottom of the file.
+## Clone the Repository
+1. Go to the GitHub site for our repository: NWC-CUAHSI-Summer-Institute/SI_fellows_2024_introductions, and click on the green button to copy the HTTPS address.
+![Copy Repo HTTPS](screenshots/copy_repo_https.png)
+3. In Jupyter environment, type:
+```
+git clone https://github.com/NWC-CUAHSI-Summer-Institute/SI_fellows_2024_introductions.git
+```
+![gh_clone](screenshots/gh_clone.png)
+
+## Set Up Your Git Information on the Jupyter Platform
+1. Click on "View" and toggle on "Show hidden files".
+![Show Hidden Files](screenshots/show_hidden.png)
+3. Edit the `.git/config` file with:
 ```
 [user]
-	email = youremailassociatedwithgithub@university.edu
-	name = yourgithubusername
+    email = youremailassociatedwithgithub@university.edu
+    name = yourgithubusername
 ```
-- Edit the Introduction File
-    Open the file introductions.txt in a text editor of your choice.
-    Add your name, your university, and two or three sentences describing your research interests.
-- Commit Your Changes
-After editing the file, save your changes and return to your terminal.
-Use the following commands to commit your changes to the repository:
+
+
+## Make a New Branch
+
+1. Understand the difference between forks and branches: [Fork vs Branch](https://www.ssw.com.au/rules/fork-vs-branch/).
+2. Create a new branch:
+```
+git checkout -b [your_branch_name]
+```
+
+
+## Add Your Information
+
+1. Open the `introductions.txt` file in Jupyter Lab.
+2. Add a few notes about yourself.
+
+## Commit Your Changes
+
+1. Stage and commit your changes:
+
 ```
 git add introductions.txt
-    git commit -m "Add my introduction"
-    git push
+git commit -m "Added my name and interests"
 ```
-- Make a pull request
+
+
+## Push Your Changes
+
+1. Push your branch to the remote repository:
+
+```
+git push --set-upstream origin [your_branch_name]
+```
+
+
+## Create a Pull Request
+
+1. Go to the GitHub repository website.
+2. Click the “Compare & pull request” button.
+![Pull Request 1](screenshots/pull_request1.png)
+4. Fill in the pull request details and submit.
+![Pull Request 2](screenshots/pull_request2.png)
+
+By following these steps, you’ll contribute your changes to the repository and learn the basics of GitHub workflows.
+
+
+
+
+
+
+
