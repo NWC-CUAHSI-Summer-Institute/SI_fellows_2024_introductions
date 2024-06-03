@@ -8,13 +8,21 @@ The goal of this training is to familiarize you with the basics of GitHub. You w
 Getting Started
 
 ## Prerequisites
-We will be using the CIROH 2i2c cloud compute platform during the Summer Institute bootcamp. You can access that platform here: https://staging.ciroh.awi.2i2c.cloud/. Please start up a "small" compute instance. It might take a minute or two to start up. When it starts, it will open up a bash terminal on the right, and a file explorer on the left.
+We will be using the CIROH 2i2c cloud compute platform during the Summer Institute bootcamp. You can access that platform here: https://ciroh.awi.2i2c.cloud/. Please start up a "small" compute instance. It might take a minute or two to start up. When it starts, it will open up a bash terminal on the right, and a file explorer on the left.
 
 # Exercise Instructions
+
+By now you should have a GitHub Account with two factor authentification and access to the 2i2c cloud compute platform. 
+
 You are interfacing with a Linux virtual machine. You'll need to follow these steps to add your information to the `introductions.txt` file. Now there will be a file called ".gitconfig", notice that hidden files have a "." in front of them.
 
+
+
 0. Configure your github information:
-On the top of the virtual compute interface there are some dropdown items. Click on "View" and toggle on "Show hidden files". 
+On the top of the virtual compute interface there are some dropdown items. Click on "View" and toggle on "Show hidden files".
+Make a new directory with the following name: ".git"
+Make a new file with the following name: "config"
+Add the folllwing information to the file ("./git/config")
 ```
 [user]
 	email = youremailassociatedwithgithub@university.edu
@@ -22,19 +30,15 @@ On the top of the virtual compute interface there are some dropdown items. Click
 ```
 2. Clone the Repository: `git clone https://github.com/NWC-CUAHSI-Summer-Institute/training_git_introductions_2024.git`
 3. Navigate into the cloned repository directory: `cd summer-institute-2024`
-
-Edit the Introduction File
-
-    Open the file summer_institute_fellows_2024_introductions.txt in a text editor of your choice.
+4. Edit the Introduction File
+    Open the file introductions.txt in a text editor of your choice.
     Add your name, your university, and two or three sentences describing your research interests.
-
-Commit Your Changes
+5. Commit Your Changes
 After editing the file, save your changes and return to your terminal.
 Use the following commands to commit your changes to the repository:
-    
-git add summer_institute_fellows_2024_introductions.txt
+```
+git add introductions.txt
     git commit -m "Add my introduction"
     git push
-
-Verify Your Changes
-Go to the GitHub repository online and check that your changes are reflected in the summer_institute_fellows_2024_introductions.txt file.
+```
+6. Make a pull request
